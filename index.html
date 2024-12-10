@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corndog -Foods-</title>
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!--icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <script src="script.js"></script>
+
+    <nav class="navbar">
+        <div class="nav-header">
+            <img src="image/icon.png" alt="icon">
+            <h1>Corndog</h1>
+        </div>
+        <div class="menu-nav">
+            <ul>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#cara-order">Cara pesan</a></li>
+                <li><a href="#kontak">Alamat restoran</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="text-head" >
+            <h1>Corndog <span>-Foods-</span></h1>
+            <p>Pesan sekarang dan nikmati corndog terlezat nomer 1 di Indonesia</p>
+        </div>
+        <div class="image-head">
+            <img src="image/header1.png" alt="head" class="corn">
+        </div>
+    </header>
+
+    <main>
+
+        <div class="form_pemesanan">
+            <h2>Form Pemesanan</h2>
+            <input type="text" placeholder="Masukkan Nama" id="txt_nama">
+            <input type="text" name="" id="txt_produk" readonly>
+            <input type="number" name="" placeholder="Masukkan Jumlah" id="txt_jumlah">
+            <button onclick="info()">Pesan</button>
+            <button id="tutup" onclick="tutup()">Tutup</button>
+        </div>
+
+        <article class="menu" id="produk">
+            <h1>Produk <span>Kami</span></h1>
+            <p style="font-weight: 300;">Terdapat beberapa pilihan produk untuk anda nikmati, mulai dari<br> yang berukuran kecil hingga yang besar</p>
+
+            <section>
+    
+                    <div class="grid">
+                        <article class="card">
+                            
+                                <img src="image/kentang.jpg" class="card-image">
+                                <div class="card-body">
+                                    <p>1. Corndog kentang (kecil)</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a class="btn-order" onclick="satu()"> Pesan </a>
+                                    <p class="harga">Rp. 10.000,00</p>
+                                </div>
+                            
+                        </article>
+
+                        <article class="card">
+                            
+                                <img src="image/pedas.jpg" class="card-image">
+                                <div class="card-body">
+                                    <p>2. Corndog keju pedas</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a class="btn-order" onclick="dua()"> Pesan </a>
+                                    <p class="harga">Rp. 20.000,00</p>
+                                </div>
+                           
+                        </article>
+
+                        <article class="card">
+                            
+                                <img src="image/keju.jpg" class="card-image">
+                                <div class="card-body">
+                                    <p>3. Corndog keju original</p>
+                                </div>
+                                <div class="card-footer">
+                                    <a class="btn-order" onclick="tiga()"> Pesan </a>
+                                    <p class="harga">Rp. 18.000,00</p>
+                                </div>
+                           
+                        </article>
+
+                        <article class="card">
+                            
+                            <img src="image/mini.jpeg" class="card-image">
+                            <div class="card-body">
+                                <p>4. Corndog original (kecil)</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn-order" onclick="empat()"> Pesan </a>
+                                <p class="harga">Rp. 10.000,00</p>
+                            </div>
+                       
+                        </article>
+
+                        <article class="card">
+                            
+                            <img src="image/bigpotato.jpeg" class="card-image">
+                            <div class="card-body">
+                                <p>5. Corndog kentang (besar)</p>
+                            </div>
+                            <div class="card-footer">
+                                <a class="btn-order" onclick="lima()"> Pesan </a>
+                                <p class="harga">Rp. 19.000,00</p>
+                            </div>
+                       
+                        </article>
+                    </div>
+
+            </section>   
+        </article>
+
+        <article class="cara" id="cara-order">
+            <h1>Cara <span>Pesan</span></h1>
+            <p style="font-weight: 300;">Berikut langkah-langkah cara melakukan pemesanan agar<br> anda dapat memesan produk kami</p>
+
+            <div class="cara-grid">
+
+                <div class="card-cara">
+                    <div class="number-icon">
+                        <img src="image/number-1.png">
+                    </div>
+                    <p>Pertama, Anda perlu membuka halaman web <a href="index.html">Corndog Foods</a>untuk melakukan pemesanan</p>
+                </div>
+
+                <div class="card-cara">
+                    <div class="number-icon">
+                        <img src="image/number-2.png">
+                    </div>
+                    <p>Selanjutnya, pilih makanan yang ingin Anda pesan</p>
+                </div>
+
+                <div class="card-cara">
+                    <div class="number-icon">
+                        <img src="image/number-3.png">
+                    </div>
+                    <p>Setelah memilih makanan tekan tombol pesan dan Anda akan diarahkan pada sebuah form</p>
+                </div>
+
+                <div class="card-cara">
+                    <div class="number-icon">
+                        <img src="image/number-4.png">
+                    </div>
+                    <p>Terakhir, isi form yang tersedia untuk melakukan pemesanan</p>
+                </div>
+            </div>
+            
+        </article>
+
+        <article class="alamat" id="kontak">
+            <h1>Alamat <span>Restoran</span></h1>
+            <p style="font-weight: 300;">Anda juga dapat melakukan pemesanan secara langsung<br> dengan mengunjungi restoran kami</p>
+
+            <div class="lokasi">
+                <div class="maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2355.1915904878465!2d107.51470503197127!3d-6.897262015253562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e504c9ca3ebf%3A0x4b7953e650b2fc91!2sSMK%20TI%20Pembangunan%20Kampus%20III!5e0!3m2!1sen!2sid!4v1728183836214!5m2!1sen!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <div class="kontak">
+                    <h3>kontak kami</h3>
+                    <div class="kontak-box">
+                        <div class="grup-kontak">
+                            <div class="icon-kontak">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="keterangan">
+                                <h5>Telepon</h5>
+                                <p>+62 892-355-208-157</p>
+                            </div>
+                        </div>
+
+                        <div class="grup-kontak">
+                            <div class="icon-kontak">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="keterangan">
+                                <h5>Email</h5>
+                                <p>dhaifullahdaffa60@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="grup-kontak">
+                            <div class="icon-kontak">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="keterangan">
+                                <h5>Instagram</h5>
+                                <p>@akunIG xxxxxxxxxx</p>
+                            </div>
+                        </div>
+
+                        <div class="grup-kontak">
+                            <div class="icon-kontak">
+                                <i class="fa-brands fa-facebook" ></i>
+                            </div>
+                            <div class="keterangan">
+                                <h5>Facebook</h5>
+                                <p>@akunFB xxxxxxxxxxxx</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        &copy; 2024. Daffa Dhaifullah
+    </footer>
+</body>
+</html>
